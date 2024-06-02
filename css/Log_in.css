@@ -1,0 +1,502 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+/*Container
+  ==============*/
+.container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+/*Header
+  ==============*/
+
+.header {
+    width: 100%;
+    height: 100px;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+.header.fixed {
+    position: fixed;
+    background-color: #F7F7F7;
+  }
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0 0 0;
+    align-items: center;
+}
+
+.header__logo {
+    width: 80px;
+    height: 80px;
+}
+
+/*Body
+  ============= */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+
+    -webkit-font-smoothing: antialiased;
+    background-color: #F7F7F7;
+}
+
+/*Nav
+==============*/
+
+.nav {
+    display: flex;
+    font-size: 16px;
+    color: #000000;
+}
+
+.nav__link {
+    text-decoration: none;
+    opacity: 0.9;
+
+    margin-right: 20px;
+
+    transition: opacity 0.1s linear;
+}
+
+.nav__link:first-child {
+    margin-left: 0;
+}
+
+.nav__link:hover {
+    opacity: 1;
+}
+
+
+/* Search__box
+============== */
+.Search__box {
+
+    display: flex;
+    padding: 7.5px 20px;
+
+
+
+    background: #FFFFFF;
+    border-radius: 5px;
+
+}
+
+.Search__box:hover>.Search__text {
+
+    border-bottom: 1.3px solid;
+    color: #000000;
+}
+
+
+.Search__text {
+
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    font-size: 14px;
+    border-bottom: 1px solid;
+    color: #636363;
+    transition: 0.4s;
+    line-height: 24px;
+    width: 210px;
+
+}
+
+.Search__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+
+
+}
+
+.Search__icon {
+    width: 17px;
+    height: 17px;
+
+}
+
+/*Icon
+  ==============*/
+
+.icon {}
+
+.icon__link {
+    opacity: 0.8;
+    margin-right: 20px;
+
+    transition: opacity 0.1s linear;
+}
+
+.icon__link:hover {
+    opacity: 1;
+}
+
+/* LOG_IN
+  ================== */
+
+.Log__in {
+    
+    align-items: center;
+    justify-content: center;
+    margin: 120px 380px;
+    color: #000000;
+
+}
+
+.Log__in__header {
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+    font-weight: 600;
+    color: #000000;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+/* Log__in__box
+============== */
+.Log__in__box {
+
+    display: flex;
+    padding: 7.5px 20px;
+
+    line-height: 44px;
+    width: 380px;
+
+    background: #D3D3D3;
+    border-radius: 5px;
+
+}
+
+.Log__in__box:hover>.Log__in__text {
+
+
+    color: #000000;
+}
+
+
+.Log__in__text {
+
+    margin: 0;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    font-size: 14px;
+    border-bottom: 1px solid;
+    color: #636363;
+    transition: 0.4s;
+    line-height: 44px;
+    width: 380px;
+
+}
+
+.Name__pole {
+    margin-top: 60px;
+    max-height: 90px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+.Name__header {
+
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    max-height: 90px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+.Email__pole {
+    margin-top: 30px;
+}
+
+.Email__header {
+
+
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+
+}
+
+.Password__pole {
+
+    margin-top: 30px;
+}
+
+.Password__header {
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
+
+
+/* Forgot__my__password
+================= */
+
+.Forgot__my {
+    display: flex;
+
+
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+    opacity: 0.8s;
+
+}
+
+.Forgot__my__text {
+    margin-right: auto;
+}
+
+
+.Forgot__password__text {
+
+
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    color: #636363;
+    opacity: 0.8s;
+}
+
+.Forgot__password__text:hover {
+    transform: opasity 1s linear;
+    color: #2d2d2d;
+}
+
+
+
+/* Button__Log
+=============== */
+
+.Button__Log {
+   
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.btn_log {
+
+
+    flex-basis: 48%;
+    background: #FFFFFF;
+    color: #000;
+    width: 140px;
+    height: 45px;
+    border-radius: 360px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: backgrount 1s;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    border: 1px solid #2D2D2D;
+
+}
+
+.btn_log:hover {
+    transform: 2s linear;
+    background: #2d2d2d;
+    color: #f5f5f5;
+}
+
+
+/*Footer
+=============== */
+.Footer__header {
+    position: absolute;
+    margin-top: 120px;
+    font-size: 42px;
+    font-weight: 600px;
+    color: #2d2d2d;
+    width: min-content;
+    cursor: pointer;
+  }
+  
+  
+  .Footer {
+    display: flex;
+  
+    background-color: #B7B7B7;
+    color: #000;
+    margin-top: 230px;
+  
+  }
+  
+  .Footer__item {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  
+  }
+  
+  .Footer__menu__header:hover {
+    color: #F5F5F5;
+    transform: opacity 1s linear;
+  
+  }
+  
+  .Footer__menu__text:hover {
+    color: #F5F5F5;
+    transform: opacity 1s linear;
+  
+  }
+  
+  .Footer__menu__left {
+    margin: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+  }
+  
+  .Footer__menu__center {
+    margin: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+  }
+  
+  .Footer__menu__right {
+    margin: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+  }
+  
+  .Footer__icon {
+    margin: 90px 0 120px 90px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    cursor: pointer;
+  
+  
+  }
+  
+  
+  
+  .Footer__menu__header {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 20px;
+    opacity: 0.8s;
+  
+  
+  }
+  
+  .Footer__menu__text {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 20px;
+    opacity: 0.8s;
+  
+  }
+  
+  
+  .Footer__icon__social {
+  
+    flex-wrap: wrap;
+  
+    flex-direction: column;
+    padding-top: 30px;
+  }
+  
+
+
+
+/*End
+============ */
+
+.End {
+    background-color: #2d2d2d;
+
+}
+
+.End__item {
+
+    display: flex;
+    justify-content: right;
+    font-size: 12px;
+    width: 1120px;
+    height: 60px;
+    align-items: center;
+    color: #ffffff;
+}
+
+
+.End__menu {
+    font-weight: 400;
+    font-size: 12px;
+    padding-right: 100px;
+    color: #ffffff;
+}
+
+.End__menu1 {
+    font-weight: 400;
+    font-size: 12px;
+
+    color: #ffffff;
+    margin-left: 76px;
+}

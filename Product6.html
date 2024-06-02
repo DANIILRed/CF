@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a class="logo" href="index.html">
+                        <img class="logo-img" src="img/Logo.png" alt="logo" />
+                    </a>
+                </div>
+
+                <nav class="nav">
+                    <a class="nav__link" href="index.html">O нас</a>
+                    <a class="nav__link" href="Catalog.html">Каталог</a>
+                    <a class="nav__link" href="#">Новая коллекция</a>
+                    <a class="nav__link" href="#">Блог</a>
+                </nav>
+
+                <div class="Search__box">
+                    <input class="Search__text " type="text" name="" placeholder="Поиск">
+                    <a class="Search__btn" href="#">
+                        <img src="img/Search.png">
+                    </a>
+
+                </div>
+
+                <nav class="icon">
+                    <a class="icon__link" href="account.php">
+                        <img src="img/account.png" alt="" />
+                    </a>
+                    <a class="icon__link" href="">
+                        <img src="img/like.png" alt="" />
+                    </a>
+                    <a class="icon__link" href="Korzina.html">
+                        <img src="img/Corzina.png" alt="" />
+                        <span>0</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <!--Product-->
+    <div class="container">
+        <div class="Product" data-id="01">
+            <div class="single-pro-image">
+                <img class="product-img" src="img/Product/T-short-Golden.png" width="100%" id="MainImg" alt="">
+
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="img/Product/T-short-Golden.png" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/Product/T-short-Golden2.png" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/Product/T-short-Golden3.png" width="100%" class="small-img" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="Product__info">
+                <h3 class="Product__header ">Футболка "Голден Стэйт"</h3>
+                <p class="Product__articul">Артикул: BL345</p>
+                <h4 class="Product__cost ">1400 руб.</h4>
+                <p class="Product__size">Размер</p>
+                <div class="Size-btn">
+                    <button class="Size-btn--choose">S</button>
+                    <button class="Size-btn--choose">M</button>
+                    <button class="Size-btn--choose">L</button>
+                    <button class="Size-btn--choose">XL</button>
+                    <button class="Size-btn--choose">XXL</button>
+                </div>
+
+
+                <p class="Product__sum">Количество</p>
+                <input id="textbox" class="Product__number" type="number" value="1">
+
+                <button data-cart class="btn-in_bag-5">В корзину</button>
+
+                <h4 class="Opisanie_prodyct">Описание</h4>
+                <p class="Opisanie_prodyct__text">Подражайте своему любимому профессионалу в футболке классического покроя "Джордан Голден Стэйт Уорриорз". 
+                    Информация о команде и игроке на мягком хлопке отдает дань уважения вашему герою.</p>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--Related products-->
+    <div class="container">
+        <h2 class="Related__header">Вам может понравиться</h2>
+        <div id="RelatedSlider">
+            <div>
+                <div class="Related__products">
+                    <div class="features__item">
+                        <a href="Product3.html">
+                            <img class="features__img1" src="img/block2/card4.png" alt="" />
+                        </a>
+                        <p class="features__title">Джерси Phoenix Suns</p>
+                        <p class="features__text">2300 руб.</p>
+                    </div>
+                    <div class="features__item">
+                        <a>
+                            <img class="features__img1" src="img/block2/card4.png" alt="" />
+                        </a>
+                        <p class="features__title">Джерси Phoenix Suns</p>
+                        <p class="features__text">2300 руб.</p>
+                    </div>
+                    <div class="features__item">
+                        <a>
+                            <img class="features__img1" src="img/block2/card4.png" alt="" />
+                        </a>
+                        <p class="features__title">Джерси Phoenix Suns</p>
+                        <p class="features__text">2300 руб.</p>
+                    </div>
+                    <div class="features__item">
+                        <a>
+                            <img class="features__img1" src="img/block2/card4.png" alt="" />
+                        </a>
+                        <p class="features__title">Джерси Phoenix Suns</p>
+                        <p class="features__text">2300 руб.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="Related__products">
+                    <div class="features__item">
+                        <a href="Product3.html">
+                            <img class="features__img1" src="img/block2/card4.png" alt="" />
+                        </a>
+                        <p class="features__title">Джерси Phoenix Suns</p>
+                        <p class="features__text">2300 руб.</p>
+                    </div>
+                    <div class="features__item">
+                        <a>
+                            <img class="features__img1" src="img/block2/card4.png" alt="" />
+                        </a>
+                        <p class="features__title">Джерси Phoenix Suns</p>
+                        <p class="features__text">2300 руб.</p>
+                    </div>
+                    <div class="features__item">
+                        <a>
+                            <img class="features__img1" src="img/block2/card4.png" alt="" />
+                        </a>
+                        <p class="features__title">Джерси Phoenix Suns</p>
+                        <p class="features__text">2300 руб.</p>
+                    </div>
+                    <div class="features__item">
+                        <a>
+                            <img class="features__img1" src="img/block2/card4.png" alt="" />
+                        </a>
+                        <p class="features__title">Джерси Phoenix Suns</p>
+                        <p class="features__text">2300 руб.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Footer-->
+
+    <div class="Footer">
+
+        <div class="container3">
+            <a href="index.html">
+                <h1 class="Footer__header">BasketShop</h1>
+            </a>
+            <div class="Footer__item">
+                <div class="Footer__menu__left">
+                    <a><a>
+                            <p class="Footer__menu__header">Аккаунт</p>
+                        </a>
+                        <a>
+                            <p class="Footer__menu__text">Профиль</p>
+                        </a></a>
+                    <a>
+                        <p class="Footer__menu__text">Заказы</p>
+                    </a></a>
+                    <a>
+                        <p class="Footer__menu__text">Корзина</p>
+                    </a></a>
+                </div>
+
+                <div class="Footer__menu__center">
+                    <a>
+                        <p class="Footer__menu__header">Коллекция</p>
+                    </a>
+                    <a>
+                        <p class="Footer__menu__text">Men</p>
+                    </a>
+                    <a>
+                        <p class="Footer__menu__text">Women</p>
+                    </a>
+                    <a>
+                        <p class="Footer__menu__text">Kids</p>
+                    </a>
+                    <a>
+                        <p class="Footer__menu__text">Скидки</p>
+                    </a>
+                </div>
+
+                <div class="Footer__menu__right">
+                    <a>
+                        <p class="Footer__menu__header">О нас</p>
+                    </a>
+                    <a>
+                        <p class="Footer__menu__text">Контакты</p>
+                    </a>
+                    <a>
+                        <p class="Footer__menu__text">Блог</p>
+                    </a>
+                    <a>
+                        <p class="Footer__menu__text">FAQ</p>
+                    </a>
+                </div>
+
+                <div class="Footer__icon">
+                    <a>
+                        <img class="Footer__icon__social" src="img/Footer/iconfacebook.png">
+                    </a>
+                    <a>
+                        <img class="Footer__icon__social" src="img/Footer/iconVK.png">
+                    </a>
+                    <a>
+                        <img class="Footer__icon__social" src="img/Footer/iconinstagram.png">
+                    </a>
+                    <a>
+                        <img class="Footer__icon__social" src="img/Footer/icontwitter.png">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--End-->
+    <div class="End">
+        <div class="container2">
+            <div class="End__item">
+                <a class="End__menu" href="#">Юридическая информация</a>
+                <a class="End__menu" href="#">Политика конфиденциальности</a>
+                <a class="End__menu1" href="#">@2022 BasketShop.ru</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/korz-01.js"></script>
+</body>
+
+</html>

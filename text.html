@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/test1.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/">Одежда</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">Главная</a></li>
+          <li><a href="/catalog">Каталог</a></li>
+          <li><a href="/cart">Корзина</a></li>
+          <li class="active"><a href="/account">Мой аккаунт</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Мой аккаунт</h1>
+      <div class="account-info">
+        <h2>Мои данные</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" value="Иван">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="ivan@example.com">
+          </div>
+          <div class="form-group">
+            <label for="password">Новый пароль:</label>
+            <input type="password" id="password" name="password">
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Подтверждение пароля:</label>
+            <input type="password" id="confirm-password" name="confirm-password">
+          </div>
+          <button type="submit">Сохранить</button>
+        </form>
+      </div>
+      <div class="orders">
+        <h2>Мои заказы</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Номер заказа</th>
+              <th>Дата</th>
+              <th>Сумма</th>
+              <th>Статус</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="/order/12345">12345</a></td>
+              <td>15.04.2023</td>
+              <td>3500 руб.</td>
+              <td>В обработке</td>
+            </tr>
+            <tr>
+              <td><a href="/order/67890">67890</a></td>
+              <td>10.04.2023</td>
+              <td>2200 руб.</td>
+              <td>Отправлен</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <p>© 2023 Одежда. Все права защищены.</p>
+    </footer>
+  </body>
+</html>
